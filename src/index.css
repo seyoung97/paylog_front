@@ -15,3 +15,16 @@ a {
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.translate-x-full {
+  /* transform: translateX(100%); */
+  position: fixed;
+  right: -100px;
+  transition: 0.5s;
+}
+
+.translate-x-0 {
+  position: fixed;
+  right: 0px;
+  transition: 0.5s;
+}
