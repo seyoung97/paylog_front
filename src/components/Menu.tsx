@@ -5,7 +5,6 @@ type Props = {
 };
 
 export default function Menu({ isMenuOpen }: Props) {
-  console.log("menu", isMenuOpen);
   const navigate = useNavigate();
 
   const navigateToCalendar = () => {
