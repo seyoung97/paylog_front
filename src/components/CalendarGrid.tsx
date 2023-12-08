@@ -1,14 +1,26 @@
 import CalendarDayLabel from "./CalendarDayLabel";
+import CalendarDate from "./CalendarDate";
 
-export default function CalendarGrid() {
+type Props = {
+  getMonthDays: () => Date[];
+};
+
+export default function CalendarGrid({ getMonthDays }: Props) {
   const dayLabel = ["일", "월", "화", "수", "목", "금", "토"];
 
   return (
-    <ul className="grid grid-cols-7 gap-1 w-11/12 m-auto mt-10">
+    <ul className="grid grid-cols-7 w-11/12 max-w-screen-2xl m-auto">
       {dayLabel.map((day) => {
         return (
           <li key={day}>
             <CalendarDayLabel day={day} />
+          </li>
+        );
+      })}
+      {getMonthDays().map((date) => {
+        return (
+          <li key={date.toString()}>
+            <CalendarDate date={date} />
           </li>
         );
       })}

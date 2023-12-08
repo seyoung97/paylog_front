@@ -19,7 +19,7 @@ export default function Menu({ isMenuOpen }: Props) {
 
   return (
     <div
-      className={`w-1/4 h-screen fixed ${menuAnimationStyle} border-l border-gray-300`}
+      className={`w-1/4 h-screen fixed ${menuAnimationStyle} bg-white	border-l border-gray-300`}
     >
       <ul className="pt-8 pl-5">
         <li

@@ -18,7 +18,7 @@ import CalendarGrid from "../components/CalendarGrid";
 export default function RevenueCalendar() {
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
-  const getMonthDays = () => {
+  const getMonthDays = (): Date[] => {
     const startDate = startOfWeek(startOfMonth(currentMonth));
     const endDate = endOfWeek(endOfMonth(currentMonth));
     return eachDayOfInterval({ start: startDate, end: endDate });
@@ -42,7 +42,9 @@ export default function RevenueCalendar() {
         <CurrentMonthSales title="이번 달 실 매출" />
         <CurrentMonthSales title="이번 달 총 환불" />
       </div>
-      <CalendarGrid />
+      <div className="mt-10 mb-20">
+        <CalendarGrid getMonthDays={getMonthDays} />
+      </div>
     </div>
   );
 }
