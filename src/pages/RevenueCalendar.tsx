@@ -10,6 +10,7 @@ import {
   subMonths,
 } from "date-fns";
 import koLocale from "date-fns/locale/ko";
+import axios from "axios";
 
 import CalendarHeader from "../components/CalendarHeader";
 import CurrentMonthSales from "../components/currentMonthSales";
@@ -17,6 +18,7 @@ import CalendarGrid from "../components/CalendarGrid";
 
 export default function RevenueCalendar() {
   const [currentMonth, setCurrentMonth] = useState(new Date());
+  console.log("currentMonth", currentMonth); // Tue Dec 12 2023 14:26:47 GMT+0900
 
   const getMonthDays = (): Date[] => {
     const startDate = startOfWeek(startOfMonth(currentMonth));

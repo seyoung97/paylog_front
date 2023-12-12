@@ -1,0 +1,317 @@
+{
+  "revenue_calendar_data": [
+    {
+      "2023": {
+        "Nov": [
+          {
+            "date": "Wed Nov 1 2023 21:00:00",
+            "daily_sales": 1324567,
+            "dail_refund": 30000
+          },
+          {
+            "date": "Thu Nov 2 2023 21:00:00",
+            "daily_sales": 1224547,
+            "dail_refund": 10000
+          },
+          {
+            "date": "Fri Nov 3 2023 21:00:00",
+            "daily_sales": 1324567,
+            "dail_refund": 12000
+          },
+          {
+            "date": "Sat Nov 4 2023 21:00:00",
+            "daily_sales": 2024567,
+            "dail_refund": 150000
+          },
+          {
+            "date": "Sun Nov 5 2023 21:00:00",
+            "daily_sales": 2124567,
+            "dail_refund": 156000
+          },
+          {
+            "date": "Mon Nov 6 2023 21:00:00",
+            "daily_sales": 1124507,
+            "dail_refund": 0
+          },
+          {
+            "date": "Tue Nov 7 2023 21:00:00",
+            "daily_sales": 1724598,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Wed Nov 8 2023 21:00:00",
+            "daily_sales": 1524576,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Thu Nov 9 2023 21:00:00",
+            "daily_sales": 1324587,
+            "daily_refund": 25000
+          },
+          {
+            "date": "Fri Nov 10 2023 21:00:00",
+            "daily_sales": 1124567,
+            "daily_refund": 12000
+          },
+          {
+            "date": "Sat Nov 11 2023 21:00:00",
+            "daily_sales": 1224578,
+            "daily_refund": 18000
+          },
+          {
+            "date": "Sun Nov 12 2023 21:00:00",
+            "daily_sales": 1424590,
+            "daily_refund": 35000
+          },
+          {
+            "date": "Mon Nov 13 2023 21:00:00",
+            "daily_sales": 1624598,
+            "daily_refund": 40000
+          },
+          {
+            "date": "Tue Nov 14 2023 21:00:00",
+            "daily_sales": 1824587,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Wed Nov 15 2023 21:00:00",
+            "daily_sales": 2024576,
+            "daily_refund": 25000
+          },
+          {
+            "date": "Thu Nov 16 2023 21:00:00",
+            "daily_sales": 2124590,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Fri Nov 17 2023 21:00:00",
+            "daily_sales": 2224587,
+            "daily_refund": 15000
+          },
+          {
+            "date": "Sat Nov 18 2023 21:00:00",
+            "daily_sales": 2324578,
+            "daily_refund": 10000
+          },
+          {
+            "date": "Sun Nov 19 2023 21:00:00",
+            "daily_sales": 2424590,
+            "daily_refund": 12000
+          },
+          {
+            "date": "Mon Nov 20 2023 21:00:00",
+            "daily_sales": 2524598,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Tue Nov 21 2023 21:00:00",
+            "daily_sales": 2624587,
+            "daily_refund": 50000
+          },
+          {
+            "date": "Wed Nov 22 2023 21:00:00",
+            "daily_sales": 2724576,
+            "daily_refund": 25000
+          },
+          {
+            "date": "Thu Nov 23 2023 21:00:00",
+            "daily_sales": 2824590,
+            "daily_refund": 18000
+          },
+          {
+            "date": "Fri Nov 24 2023 21:00:00",
+            "daily_sales": 2924587,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Sat Nov 25 2023 21:00:00",
+            "daily_sales": 3024578,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Sun Nov 26 2023 21:00:00",
+            "daily_sales": 3124590,
+            "daily_refund": 40000
+          },
+          {
+            "date": "Mon Nov 27 2023 21:00:00",
+            "daily_sales": 3224598,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Tue Nov 28 2023 21:00:00",
+            "daily_sales": 3324587,
+            "daily_refund": 15000
+          },
+          {
+            "date": "Wed Nov 29 2023 21:00:00",
+            "daily_sales": 3424576,
+            "daily_refund": 12000
+          },
+          {
+            "date": "Thu Nov 30 2023 21:00:00",
+            "daily_sales": 3524590,
+            "daily_refund": 30000
+          }
+        ],
+        "Dec": [
+          {
+            "date": "Fri Dec 1 2023 21:00:00",
+            "daily_sales": 3624598,
+            "daily_refund": 35000
+          },
+          {
+            "date": "Sat Dec 2 2023 21:00:00",
+            "daily_sales": 3724587,
+            "daily_refund": 40000
+          },
+          {
+            "date": "Sun Dec 3 2023 21:00:00",
+            "daily_sales": 3824576,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Mon Dec 4 2023 21:00:00",
+            "daily_sales": 3924590,
+            "daily_refund": 25000
+          },
+          {
+            "date": "Tue Dec 5 2023 21:00:00",
+            "daily_sales": 4024587,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Wed Dec 6 2023 21:00:00",
+            "daily_sales": 4124578,
+            "daily_refund": 15000
+          },
+          {
+            "date": "Thu Dec 7 2023 21:00:00",
+            "daily_sales": 4224590,
+            "daily_refund": 12000
+          },
+          {
+            "date": "Fri Dec 8 2023 21:00:00",
+            "daily_sales": 4324598,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Sat Dec 9 2023 21:00:00",
+            "daily_sales": 4424587,
+            "daily_refund": 50000
+          },
+          {
+            "date": "Sun Dec 10 2023 21:00:00",
+            "daily_sales": 4524576,
+            "daily_refund": 25000
+          },
+          {
+            "date": "Mon Dec 11 2023 21:00:00",
+            "daily_sales": 4624590,
+            "daily_refund": 18000
+          },
+          {
+            "date": "Tue Dec 12 2023 21:00:00",
+            "daily_sales": 4724587,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Wed Dec 13 2023 21:00:00",
+            "daily_sales": 4824578,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Thu Dec 14 2023 21:00:00",
+            "daily_sales": 4924590,
+            "daily_refund": 40000
+          },
+          {
+            "date": "Fri Dec 15 2023 21:00:00",
+            "daily_sales": 5024598,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Sat Dec 16 2023 21:00:00",
+            "daily_sales": 5124587,
+            "daily_refund": 15000
+          },
+          {
+            "date": "Sun Dec 17 2023 21:00:00",
+            "daily_sales": 5224576,
+            "daily_refund": 12000
+          },
+          {
+            "date": "Mon Dec 18 2023 21:00:00",
+            "daily_sales": 5324590,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Tue Dec 19 2023 21:00:00",
+            "daily_sales": 5424587,
+            "daily_refund": 50000
+          },
+          {
+            "date": "Wed Dec 20 2023 21:00:00",
+            "daily_sales": 5524578,
+            "daily_refund": 25000
+          },
+          {
+            "date": "Thu Dec 21 2023 21:00:00",
+            "daily_sales": 5624590,
+            "daily_refund": 18000
+          },
+          {
+            "date": "Fri Dec 22 2023 21:00:00",
+            "daily_sales": 5724587,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Sat Dec 23 2023 21:00:00",
+            "daily_sales": 5824578,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Sun Dec 24 2023 21:00:00",
+            "daily_sales": 5924590,
+            "daily_refund": 40000
+          },
+          {
+            "date": "Mon Dec 25 2023 21:00:00",
+            "daily_sales": 6024598,
+            "daily_refund": 20000
+          },
+          {
+            "date": "Tue Dec 26 2023 21:00:00",
+            "daily_sales": 6124587,
+            "daily_refund": 15000
+          },
+          {
+            "date": "Wed Dec 27 2023 21:00:00",
+            "daily_sales": 6224576,
+            "daily_refund": 12000
+          },
+          {
+            "date": "Thu Dec 28 2023 21:00:00",
+            "daily_sales": 6324590,
+            "daily_refund": 30000
+          },
+          {
+            "date": "Fri Dec 29 2023 21:00:00",
+            "daily_sales": 6424587,
+            "daily_refund": 50000
+          },
+          {
+            "date": "Sat Dec 30 2023 21:00:00",
+            "daily_sales": 6524578,
+            "daily_refund": 25000
+          },
+          {
+            "date": "Sun Dec 31 2023 21:00:00",
+            "daily_sales": 6624590,
+            "daily_refund": 18000
+          }
+        ]
+      }
+    }
+  ]
+}
