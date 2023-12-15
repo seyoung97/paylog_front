@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useQuery } from "react-query";
 import {
   startOfMonth,
   endOfMonth,
@@ -10,15 +11,19 @@ import {
   subMonths,
 } from "date-fns";
 import koLocale from "date-fns/locale/ko";
-import axios from "axios";
 
 import CalendarHeader from "../components/CalendarHeader";
 import CurrentMonthSales from "../components/currentMonthSales";
 import CalendarGrid from "../components/CalendarGrid";
 
+import { fetchRevenueCalendarData } from "../assets/service/calendar";
+
 export default function RevenueCalendar() {
   const [currentMonth, setCurrentMonth] = useState(new Date());
   console.log("currentMonth", currentMonth); // Tue Dec 12 2023 14:26:47 GMT+0900
+
+  const { data } = useQuery("jsonData", fetchRevenueCalendarData);
+  if (data) console.log("calendar data", data.data["2023"]["Dec"]);
 
   const getMonthDays = (): Date[] => {
     const startDate = startOfWeek(startOfMonth(currentMonth));
@@ -33,6 +38,8 @@ export default function RevenueCalendar() {
   const handleNextMonth = () => {
     setCurrentMonth(addMonths(currentMonth, 1));
   };
+
+  console.log("format", format(currentMonth, "MMM"));
   return (
     <div>
       <CalendarHeader
@@ -45,7 +52,12 @@ export default function RevenueCalendar() {
         <CurrentMonthSales title="이번 달 총 환불" />
       </div>
       <div className="mt-10 mb-20">
-        <CalendarGrid getMonthDays={getMonthDays} />
+        <CalendarGrid
+          getMonthDays={getMonthDays}
+          revenueData={data}
+          selectorMonth={format(currentMonth, "MMM")}
+          selectorYear={format(currentMonth, "yyy")}
+        />
       </div>
     </div>
   );
