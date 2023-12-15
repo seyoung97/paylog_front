@@ -5,32 +5,32 @@
         {
           "date": "Wed Nov 1 2023 21:00:00",
           "daily_sales": 1324567,
-          "dail_refund": 30000
+          "daily_refund": 30000
         },
         {
           "date": "Thu Nov 2 2023 21:00:00",
           "daily_sales": 1224547,
-          "dail_refund": 10000
+          "daily_refund": 10000
         },
         {
           "date": "Fri Nov 3 2023 21:00:00",
           "daily_sales": 1324567,
-          "dail_refund": 12000
+          "daily_refund": 12000
         },
         {
           "date": "Sat Nov 4 2023 21:00:00",
           "daily_sales": 2024567,
-          "dail_refund": 150000
+          "daily_refund": 150000
         },
         {
           "date": "Sun Nov 5 2023 21:00:00",
           "daily_sales": 2124567,
-          "dail_refund": 156000
+          "daily_refund": 156000
         },
         {
           "date": "Mon Nov 6 2023 21:00:00",
           "daily_sales": 1124507,
-          "dail_refund": 0
+          "daily_refund": 0
         },
         {
           "date": "Tue Nov 7 2023 21:00:00",

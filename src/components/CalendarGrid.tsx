@@ -6,16 +6,9 @@ import { RevenueData } from "../type";
 type Props = {
   getMonthDays: () => Date[];
   revenueData: RevenueData;
-  selectorMonth: string;
-  selectorYear: string;
 };
 
-export default function CalendarGrid({
-  getMonthDays,
-  revenueData,
-  selectorMonth,
-  selectorYear,
-}: Props) {
+export default function CalendarGrid({ getMonthDays, revenueData }: Props) {
   const dayLabel = ["일", "월", "화", "수", "목", "금", "토"];
 
   return (
@@ -33,9 +26,9 @@ export default function CalendarGrid({
             <CalendarDate
               date={date}
               dailyRevenueData={
-                revenueData?.data?.[selectorYear]?.[selectorMonth]?.[
-                  Number(format(date, "d")) - 1
-                ] ?? 0
+                revenueData?.data?.[format(date, "yyy")]?.[
+                  format(date, "MMM")
+                ]?.[Number(format(date, "d")) - 1] ?? 0
               }
             />
           </li>

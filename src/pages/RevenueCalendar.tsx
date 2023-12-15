@@ -17,13 +17,12 @@ import CurrentMonthSales from "../components/currentMonthSales";
 import CalendarGrid from "../components/CalendarGrid";
 
 import { fetchRevenueCalendarData } from "../assets/service/calendar";
+import { DailyData } from "../type";
 
 export default function RevenueCalendar() {
   const [currentMonth, setCurrentMonth] = useState(new Date());
-  console.log("currentMonth", currentMonth); // Tue Dec 12 2023 14:26:47 GMT+0900
 
   const { data } = useQuery("jsonData", fetchRevenueCalendarData);
-  if (data) console.log("calendar data", data.data["2023"]["Dec"]);
 
   const getMonthDays = (): Date[] => {
     const startDate = startOfWeek(startOfMonth(currentMonth));
@@ -39,7 +38,22 @@ export default function RevenueCalendar() {
     setCurrentMonth(addMonths(currentMonth, 1));
   };
 
-  console.log("format", format(currentMonth, "MMM"));
+  const totalRevenue = data?.data?.[format(currentMonth, "yyy")]?.[
+    format(currentMonth, "MMM")
+  ]
+    ?.reduce(function (acc: number, currentValue: DailyData) {
+      return acc + currentValue.daily_sales;
+    }, 0)
+    .toLocaleString();
+
+  const totalRefund = data?.data?.[format(currentMonth, "yyy")]?.[
+    format(currentMonth, "MMM")
+  ]
+    ?.reduce(function (acc: number, currentValue: DailyData) {
+      return acc + currentValue.daily_refund;
+    }, 0)
+    .toLocaleString();
+
   return (
     <div>
       <CalendarHeader
@@ -48,16 +62,11 @@ export default function RevenueCalendar() {
         onNextMonthClick={handleNextMonth}
       />
       <div className="flex w-4/5 m-auto">
-        <CurrentMonthSales title="이번 달 실 매출" />
-        <CurrentMonthSales title="이번 달 총 환불" />
+        <CurrentMonthSales title="이번 달 실 매출" total={totalRevenue} />
+        <CurrentMonthSales title="이번 달 총 환불" total={totalRefund} />
       </div>
       <div className="mt-10 mb-20">
-        <CalendarGrid
-          getMonthDays={getMonthDays}
-          revenueData={data}
-          selectorMonth={format(currentMonth, "MMM")}
-          selectorYear={format(currentMonth, "yyy")}
-        />
+        <CalendarGrid getMonthDays={getMonthDays} revenueData={data} />
       </div>
     </div>
   );
