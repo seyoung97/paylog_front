@@ -12,8 +12,8 @@ export default function Header() {
   };
 
   return (
-    <>
-      <div className="flex justify-between items-center w-full border-b border-gray-200 shadow-sm">
+    <div className="sticky top-0 bg-white">
+      <div className=" flex justify-between items-center w-full border-b border-gray-200 shadow-sm">
         <div className="w-1/12 mx-4 py-3">
           <img src={logo} className="w-full"></img>
         </div>
@@ -24,6 +24,6 @@ export default function Header() {
         )}
       </div>
       <Menu isMenuOpen={isMenuOpen} />
-    </>
+    </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Menu({ isMenuOpen }: Props) {
   const navigate = useNavigate();
 
   const navigateToCalendar = () => {
-    navigate("/");
+    navigate("/revenue_calendar");
   };
 
   const navigateToProductAnalysis = () => {
