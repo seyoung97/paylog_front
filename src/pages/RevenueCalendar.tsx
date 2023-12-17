@@ -13,7 +13,7 @@ import {
 import koLocale from "date-fns/locale/ko";
 
 import CalendarHeader from "../components/CalendarHeader";
-import CurrentMonthSales from "../components/currentMonthSales";
+import CurrentMonthSales from "../components/CurrentMonthSales";
 import CalendarGrid from "../components/CalendarGrid";
 
 import { fetchRevenueCalendarData } from "../assets/service/calendar";
@@ -38,7 +38,7 @@ export default function RevenueCalendar() {
     setCurrentMonth(addMonths(currentMonth, 1));
   };
 
-  const totalRevenue = data?.data?.[format(currentMonth, "yyy")]?.[
+  const totalRevenue = data?.[format(currentMonth, "yyy")]?.[
     format(currentMonth, "MMM")
   ]
     ?.reduce(function (acc: number, currentValue: DailyData) {
@@ -46,7 +46,7 @@ export default function RevenueCalendar() {
     }, 0)
     .toLocaleString();
 
-  const totalRefund = data?.data?.[format(currentMonth, "yyy")]?.[
+  const totalRefund = data?.[format(currentMonth, "yyy")]?.[
     format(currentMonth, "MMM")
   ]
     ?.reduce(function (acc: number, currentValue: DailyData) {

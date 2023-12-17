@@ -26,7 +26,7 @@ export default function CalendarGrid({ getMonthDays, revenueData }: Props) {
             <CalendarDate
               date={date}
               dailyRevenueData={
-                revenueData?.data?.[format(date, "yyy")]?.[
+                revenueData?.[format(date, "yyy")]?.[
                   format(date, "MMM")
                 ]?.[Number(format(date, "d")) - 1] ?? 0
               }
