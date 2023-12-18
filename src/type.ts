@@ -8,12 +8,6 @@ export type MonthlyData = {
   [month: string]: DailyData[];
 };
 
-export type YearlyData = {
-  [year: string]: MonthlyData;
-};
-
 export type RevenueData = {
-  data: {
-    [key: string]: YearlyData;
-  };
+  [year: string]: MonthlyData;
 };
