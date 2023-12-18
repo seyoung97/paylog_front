@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import ProductTag from "./ProductTag";
 
 export default function ProductMenuGrid() {
   const products = [
@@ -16,8 +17,9 @@ export default function ProductMenuGrid() {
     <ul className="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-10">
       {products.map((el) => {
         return (
-          <li key={el}>
+          <li key={el} className="relative">
             <ProductCard data={el} />
+            <ProductTag />
           </li>
         );
       })}
