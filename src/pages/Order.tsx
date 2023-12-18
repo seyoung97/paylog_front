@@ -4,7 +4,7 @@ import ProductMenu from "../components/ProductMenu";
 
 export default function Order() {
   return (
-    <div className="relative">
+    <div>
       <OrderCategoryTab />
       <Cart />
       <ProductMenu />

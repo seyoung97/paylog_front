@@ -7,7 +7,6 @@ import ProductAnalysis from "./pages/ProductAnalysis";
 function App() {
   return (
     <>
-      <Header />
       <Routes>
         <Route path="/" element={<Order />} />
         <Route path="/revenue_calendar" element={<RevenueCalendar />} />
